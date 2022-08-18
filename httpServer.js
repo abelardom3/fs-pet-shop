@@ -23,8 +23,6 @@ const server = http.createServer((req, res) => {
 
 
 
-
-
     const items = req.url.split('/')
     const index = items[items.length - 1]
     if (items.length > 2 && req.url === `/pets/${index}`) {
