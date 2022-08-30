@@ -8,7 +8,6 @@ app.use(express.json())
 
 
 
-
 app.get('/pets', (req, res) => {
     fs.readFile('./pets.json', 'utf-8', (err, data) => {
         if (err) throw err;
